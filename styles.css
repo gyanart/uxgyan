@@ -4,12 +4,12 @@
    ============================================================ */
 
 :root {
-  --cream: #F4EFE6;
-  --ink: #1F2418;
-  --sage: #6B8060;
-  --stone: #E8E3D8;
-  --fog: #8A9080;
-  --clay: #B26A47;
+  --cream: #15140F;
+  --ink: #ECE7DA;
+  --sage: #8FAF82;
+  --stone: #2B2A22;
+  --fog: #9B9C8E;
+  --clay: #D98857;
 
   --max-width: 1280px;
   --margin: 64px;
@@ -116,7 +116,7 @@ p:last-child { margin-bottom: 0; }
   position: sticky;
   top: 0;
   z-index: 40;
-  background: rgba(244, 239, 230, 0.88);
+  background: rgba(21, 20, 15, 0.88);
   backdrop-filter: blur(6px);
   border-bottom: 1px solid transparent;
   transition: border-color 200ms ease;
@@ -519,7 +519,7 @@ p:last-child { margin-bottom: 0; }
   width: 100%;
   height: 100%;
   background:
-    linear-gradient(135deg, rgba(107,128,96,0.14), rgba(178,106,71,0.10));
+    linear-gradient(135deg, rgba(143,175,130,0.22), rgba(217,136,87,0.16));
   display: flex;
   align-items: flex-end;
   padding: 20px;
