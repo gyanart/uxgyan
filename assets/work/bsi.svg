@@ -1,0 +1,28 @@
+<svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Abstract wireframe of a nested business-service map dashboard">
+<rect x="0" y="0" width="400" height="250" fill="var(--stone)"/>
+<rect x="14" y="14" width="372" height="222" rx="6" fill="var(--cream)" stroke="var(--fog)" stroke-opacity="0.35" stroke-width="1"/>
+<rect x="14" y="14" width="372" height="26" rx="6" fill="var(--ink)" fill-opacity="0.05"/>
+<circle cx="30" cy="27" r="3.5" fill="var(--fog)" fill-opacity="0.6"/>
+<circle cx="42" cy="27" r="3.5" fill="var(--fog)" fill-opacity="0.6"/>
+<circle cx="54" cy="27" r="3.5" fill="var(--fog)" fill-opacity="0.6"/>
+<rect x="150" y="22" width="100" height="10" rx="2" fill="var(--fog)" fill-opacity="0.35"/>
+<rect x="14" y="40" width="64" height="196" fill="var(--ink)" fill-opacity="0.03"/>
+<rect x="26" y="58" width="40" height="6" rx="1.5" fill="var(--sage)"/>
+<rect x="26" y="78" width="40" height="6" rx="1.5" fill="var(--fog)" fill-opacity="0.4"/>
+<rect x="26" y="98" width="40" height="6" rx="1.5" fill="var(--fog)" fill-opacity="0.4"/>
+<rect x="26" y="118" width="40" height="6" rx="1.5" fill="var(--fog)" fill-opacity="0.4"/>
+
+<rect x="94" y="58" width="266" height="26" rx="3" fill="var(--ink)" fill-opacity="0.06"/>
+<rect x="104" y="66" width="90" height="8" rx="2" fill="var(--fog)" fill-opacity="0.55"/>
+<circle cx="340" cy="71" r="5" fill="var(--sage)"/>
+<rect x="94" y="94" width="120" height="118" rx="3" fill="var(--ink)" fill-opacity="0.04" stroke="var(--fog)" stroke-opacity="0.25"/>
+<rect x="106" y="106" width="60" height="6" rx="1.5" fill="var(--fog)" fill-opacity="0.5"/>
+<rect x="106" y="122" width="96" height="34" rx="3" fill="var(--sage)" fill-opacity="0.15" stroke="var(--sage)" stroke-opacity="0.5"/>
+<rect x="106" y="164" width="96" height="34" rx="3" fill="var(--ink)" fill-opacity="0.05" stroke="var(--fog)" stroke-opacity="0.3"/>
+<rect x="228" y="94" width="132" height="118" rx="3" fill="var(--ink)" fill-opacity="0.04" stroke="var(--fog)" stroke-opacity="0.25"/>
+<rect x="240" y="106" width="60" height="6" rx="1.5" fill="var(--fog)" fill-opacity="0.5"/>
+<rect x="240" y="122" width="108" height="22" rx="3" fill="var(--ink)" fill-opacity="0.05" stroke="var(--fog)" stroke-opacity="0.3"/>
+<rect x="240" y="150" width="108" height="22" rx="3" fill="var(--clay)" fill-opacity="0.16" stroke="var(--clay)" stroke-opacity="0.5"/>
+<rect x="240" y="178" width="108" height="22" rx="3" fill="var(--ink)" fill-opacity="0.05" stroke="var(--fog)" stroke-opacity="0.3"/>
+
+</svg>

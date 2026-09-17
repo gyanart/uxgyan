@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Business Service Insights — Case study · Gyaneshwar Mule</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Instrument+Sans:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<nav class="site-nav scrolled">
+  <div class="wrap">
+    <a class="case-back" href="../index.html#work">← All work</a>
+    <a href="../index.html" class="monogram">GM<span class="dot">.</span></a>
+  </div>
+</nav>
+
+<header class="wrap case-hero">
+  <div class="case-label label">Case study · Business Service Insights</div>
+  <h1 class="case-h1">Business Service Insights</h1>
+  <p class="case-deck">A recovery order concept for enterprise workloads — sequencing dependency-aware recovery instead of bringing everything back online at once.</p>
+
+  <div class="case-hero-visual" style="margin-bottom: 48px; border-radius: 4px; overflow: hidden; border: 1px solid var(--stone);"><img src="../assets/work/bsi-screenshot.png" alt="Business Service Insights dashboard screenshot" style="width:100%; display:block;"></div>
+
+  <div class="metric-strip">
+    <div class="metric-block">
+      <div class="metric-number">200</div>
+      <div class="metric-label">workloads supported within a single recovery configuration</div>
+    </div>
+    <div class="metric-block">
+      <div class="metric-number">10</div>
+      <div class="metric-label">independently sequenced recovery orders per configuration</div>
+    </div>
+  </div>
+</header>
+
+<section class="wrap case-block">
+  <h3>Brief</h3>
+  <p>This case study focuses on one specific capability within Business Service Insights: a recovery order concept for workloads. When an incident takes down multiple interdependent applications, Kyndryl's platform was recovering all of them in parallel — with no way to say a database needed to come back online before the application that depends on it.</p>
+  <p>The users were delivery managers and operators — the people responsible for actually executing recovery during an incident, often under time pressure, across environments where getting the order wrong turns one incident into two. The ask was to design a way to group workloads and define the sequence they should recover in, so dependency order became something the system respected rather than something operators had to manage by hand.</p>
+
+  <div class="case-gallery">
+    <figure>
+      <img src="../assets/work/bsi-global-map.png" alt="Global overview map of critical applications and services by country">
+      <figcaption>Global overview — critical/warning counts by country</figcaption>
+    </figure>
+    <figure>
+      <img src="../assets/work/bsi-remediation-insights.png" alt="Remediation with corrective closure insights view, showing automation opportunity breakdown">
+      <figcaption>Remediation insights — automation opportunity breakdown [confirm which flow this belongs to before publishing]</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="wrap case-block">
+  <h3>My role</h3>
+  <p class="case-block-title">UX Designer, owning the interaction design for this feature end to end.</p>
+  <p>I took this from a one-line problem statement — recovery happens in parallel, with no sequencing — through to a build-ready interaction spec, working closely with product to keep the design anchored on how delivery managers and operators actually think about dependency during an incident.</p>
+  <ul>
+    <li>Wrote the UX problem statement and user story with product</li>
+    <li>Designed the recovery-order group concept — how workloads get grouped, and how a group's sequence is defined</li>
+    <li>Specified the control set: dropdown selection, add/remove icons, and moving workloads between recovery orders</li>
+    <li>Defined how default recovery orders behave as an editable starting state</li>
+    <li>Investigated drag-and-drop as a secondary interaction, weighed against the scale constraints</li>
+  </ul>
+</section>
+
+<section class="wrap case-block">
+  <h3>The challenge</h3>
+  <p>The hard part wasn't any single screen — it was making a genuinely technical dependency problem (what has to start before what) usable under incident pressure, for two audiences at once: delivery managers who think in terms of business services, and operators who think in terms of individual workloads.</p>
+  <p>There was also a scale constraint built into the brief from day one: up to 200 workloads across 10 recovery orders. That ruled out any interaction pattern that only worked cleanly for a handful of items — the design had to hold up whether someone was managing 5 workloads or 150.</p>
+</section>
+
+<section class="wrap case-block">
+  <h3>What I did</h3>
+  <ol>
+    <li>Reviewed the existing parallel-recovery flow to map exactly where the lack of sequencing created operational risk.</li>
+    <li>Wrote the UX problem statement and user story with product to keep the team anchored on the delivery-manager/operator use case.</li>
+    <li>Designed the recovery-order group concept: how a workload gets assigned to a group, and how that group's own recovery sequence is defined.</li>
+    <li>Specified the core controls — a dropdown to select a recovery order, plus/minus icons to add or remove workloads, and a mechanism to move a workload between recovery orders.</li>
+    <li>Defined a default set of recovery orders as a starting state, using the same controls to let users modify them.</li>
+    <li>Investigated a drag-and-drop pattern as an alternative to the icon-based controls, and weighed it against the 200-workload scale constraint.</li>
+    <li>Prepared the interaction spec for engineering handoff, including boundary cases at the 10-recovery-order and 200-workload limits.</li>
+  </ol>
+  <p class="fog">Every control here had to earn its place at 200-workload scale — this was constraint-first design, not a blank canvas.</p>
+</section>
+
+<section class="wrap case-block">
+  <h3>The outcome</h3>
+  <ul>
+    <li>A complete interaction spec for a recovery order concept: grouping, sequencing, and default states, ready for engineering handoff</li>
+    <li>Defined scale support for up to 200 workloads across 10 independently sequenced recovery orders</li>
+    <li>Adoption and incident-response figures are under NDA</li>
+  </ul>
+  <p>The shift: recovery moved from an all-at-once operation with no guardrails to a sequenced, dependency-aware process that delivery managers could actually trust during an incident.</p>
+</section>
+
+<section class="wrap case-block">
+  <h3>What I'd do differently</h3>
+  <p>Drag-and-drop is still listed as "a consideration" in this spec, not a confirmed decision — if I were doing this again, I'd push to validate it with real delivery managers and operators before finalizing the interaction, rather than letting it sit as an open question into build. I'd also want to pressure-test the icon-based add/remove controls at the upper end of scale — a pattern that feels fine at 10 workloads can get genuinely tedious at 200, and that's exactly the kind of thing that only shows up when you test at the real ceiling.</p>
+  <p>I'd also tighten the definition of the default recovery orders before implementation. The brief is clear that users can modify the defaults, but it doesn't yet define what a sensible out-of-the-box starting point looks like for a typical customer — that's the kind of ambiguity that turns into rework once engineering starts building against it.</p>
+</section>
+
+<section class="wrap case-block">
+  <h3>How I worked</h3>
+  <p>The core of this problem was structural, not visual — which controls exist, how they behave at scale, what happens at the edges — so most of the time went into interaction logic and edge-case walkthroughs rather than high-fidelity screens.</p>
+  <p>I reviewed the user story and problem statement iteratively with product to keep it honest to the delivery-manager/operator use case, and worked with engineering to confirm the 200-workload, 10-recovery-order ceiling was realistic within the existing platform architecture before it went into the spec.</p>
+</section>
+
+<div class="wrap case-foot">
+  <p class="case-foot-line">Enterprise UX for AI-driven IT operations.</p>
+  <a class="case-back" href="../index.html#work">← All work</a>
+</div>
+
+</body>
+</html>
